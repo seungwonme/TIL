@@ -1,0 +1,1 @@
+    [모던 JavaScript 튜토리얼](https://ko.javascript.info/)을 보고 정리한 내용입니다.
