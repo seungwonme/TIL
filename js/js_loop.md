@@ -1,6 +1,25 @@
 # iteration statement in javascript
 
 ## for loop
+    //구구단 만들기
+    let number = 9;
+        for (let i = 1; i <= 9; i++) {
+            document.write(`<br>${number}x${i} = ` + number*i)
+        }
+    
+    // 결과
+    9x1 = 9
+    9x2 = 18
+    9x3 = 27
+    9x4 = 36
+    9x5 = 45
+    9x6 = 54
+    9x7 = 63
+    9x8 = 72
+    9x9 = 81
+
+* * *
+
     //별 추가하기
     for (let i = 0; i <= 9; i++) {
         let star = '*';
