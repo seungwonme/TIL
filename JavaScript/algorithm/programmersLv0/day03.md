@@ -1,7 +1,7 @@
 # Jan 12, 2023 
 
 method를 찾아서 풀거나, 인터넷에서 검색해서 푸는 것보다 내가 알고 있는 부분만으로 풀어 보자.<br>풀면서 떠오르는 아이디어가 내 실력이 된다.<br><br>
-*2번은 method를 알면 쉬웠지만 반복문으로 풀 때 숙지가 안되있고, 3번은 그냥 모르겠다.*
+*2번은 method를 알면 쉬웠지만 반복문으로 풀 때 숙지가 안되있고, 3번은 ~~그냥 모르겠다.~~ 다시 보니까 알듯하다. 확실히 알 때까지 연습하자.*
     
 * * *
 
@@ -57,7 +57,31 @@ method를 찾아서 풀거나, 인터넷에서 검색해서 푸는 것보다 내
 ## [최빈값 구하기](https://school.programmers.co.kr/learn/courses/30/lessons/120812)
 >최빈값은 주어진 값 중에서 가장 자주 나오는 값을 의미합니다.<br>정수 배열 array가 매개변수로 주어질 때, 최빈값을 return 하도록 solution 함수를 완성해보세요.<br>최빈값이 여러 개면 -1을 return 합니다.
 
-    정말 method 없이 풀 수 있는 방법을 이해를 못해서 method로 풀어보고 다음에 한 번 더 해볼 예정
+    function solution(array) {
+        let soltedArray = array.sort((a,b) => a-b) // 정렬
+        let freqNum = -1; // 최빈값
+        let freqRepeatNum = 0; // 최빈값이 될 때 몇번 반복해서 된건지
+        let freqCnt = 0; // 똑같은 숫자 몇번 등장했는지
+        let beforeNum = -1; // 이전 숫자
+        let isDupFreqNum = false; // 최빈값이 여러개 등장했는지
+        for(cnt=0;cnt<array.length;cnt++){
+            if(beforeNum !== array[cnt]){
+                freqCnt = 1;
+            } else {
+                freqCnt ++;
+            }
+            if (freqCnt === freqRepeatNum&freqNum !== array[cnt]){
+                isDupFreqNum = true;
+            }
+            if (freqCnt > freqRepeatNum){
+                freqNum = array[cnt];
+                freqRepeatNum = freqCnt;
+                isDupFreqNum = false
+            }
+            beforeNum = array[cnt];
+        }
+        return isDupFreqNum === true ?  -1: freqNum
+    }
 ## [짝수는 싫어요](https://school.programmers.co.kr/learn/courses/30/lessons/120813)
 >정수 n이 매개변수로 주어질 때, n 이하의 홀수가 오름차순으로 담긴 배열을 return하도록 solution 함수를 완성해주세요.
 
