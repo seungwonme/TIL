@@ -6,7 +6,7 @@
 
 ## automatic semicolon insertion
 
->줄바꿈이 있다면 ;으로 해석한다.<br>
+줄바꿈이 있다면 ;으로 해석한다.<br>
 예외의 경우도 있기 때문에 항상 각 statement마다 ;을 넣어주기
 
 <br>
@@ -14,12 +14,11 @@
 ## 변수와 상수
 [var, let, const 정리글](https://velog.io/@bathingape/JavaScript-var-let-const-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 
->변수명은 최대한 자세히, 하지만 간결하게 
+- 변수명은 최대한 자세히, 하지만 간결하게 
 단어의 조합이라면 두번째 단어부터 첫글자를 대문자로 쓰기
-ex) 현재 접속한 사용자 -> currentUserName<br>
-변하지 않는 하드코딩한 상수는 대문자와 언더바로 명명한다. 
-ex) BIRTH_YEAR<br>
-변수를 재사용하기보다는 새로운 변수를 선언하기 (오류날 확률이 크기 
+- ex) 현재 접속한 사용자 -> currentUserName<br>
+- 변하지 않는 하드코딩한 상수는 대문자와 언더바로 명명한다.<br>ex) BIRTH_YEAR
+- 변수를 재사용하기보다는 새로운 변수를 선언하기 (오류날 확률이 크기 
 때문)
 
 <br>
@@ -84,7 +83,7 @@ ex) BIRTH_YEAR<br>
 
 1. 0, "", null, undefined NaN 은 모두 falsy 이다. 이외 값은 truthy
 2. 조건부 연산자는 조건에 따라 반환값을 다르게 할 때 이용하는 것을 추천한다.
-3. 단순히 여러분기를 만들어 처리할 때는 if를 이용하는 것을 추천한다.
+3. 단순히 여러 분기를 만들어 처리할 때는 if를 이용하는 것을 추천한다.
 
 <br>
 
