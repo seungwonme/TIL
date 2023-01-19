@@ -1,4 +1,4 @@
-// string.split( separator(선별기) , limit(option) ) 
+// string.split( separator(선별기) , [limit] ) 
 
 const comma = 'a,b,c,d'
 
