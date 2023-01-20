@@ -10,6 +10,8 @@
 [filter.js](./filter.js)<br>
 [sort.js](./sort.js)<br>
 [reduce.js](./reduce.js)<br><br>
+
+map find
 나 혼자 푸는 것도 중요하지만 다른 사람의 풀이보고 내 것으로 흡수하는 것이 더 중요하다
 
 문제 98개 풀어따 헤헤
