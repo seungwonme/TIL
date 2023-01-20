@@ -2,7 +2,7 @@
 
 int main(void)
 {
-  /* ++
+  /* // ++
   int a = 10;
   printf("%d\n",++a); // 11 이 행에서 +1
   printf("%d\n",a); // 11
@@ -10,7 +10,7 @@ int main(void)
   printf("%d\n",a); // 12
   */
 
-  /* 반복문
+  /* // 반복문
   // for
   for (int i=1;i<=10;i++) {
     printf("js네 그냥 ㅋㅋ %d\n",i);
@@ -29,7 +29,7 @@ int main(void)
   } while (i<=10);
   */
 
-  /* 2중 반복문
+  /* // 2중 반복문
   // 별만들기
   for (int i=1;i<=10;i++){
     for (int j=1;j<=i;j++){
@@ -68,12 +68,17 @@ int main(void)
   int floor;
   printf("몇 층까지?");
   scanf("%d", &floor);
-  for (int i = 1; i <= floor; i++){
-    printf("\n");
-    for (int j = 1; j <= i; j++)
+  for (int i = 1; i <= floor; i++)
+  {
+    for (int j = floor ; j > i; j--)
     {
-      printf("*");
+      printf(" ");
     }
+    for (int k = 1; k < i; k++)
+    {
+      printf("**");
+    }
+      printf("*\n");
   }
-    return 0;
+  return 0;
 }
