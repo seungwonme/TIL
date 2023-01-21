@@ -8,8 +8,8 @@
 * * *
 
 [42 SEOUL](https://42seoul.kr/seoul42/contents/view?contentsNo=17&level=2&menuNo=31) (2023년 02월 ~ 03월)<br>
-1.12 체크인 미팅 신청 (성공)<br>
-1.19 체크인 미팅<br>
+1.12 ~체크인 미팅 신청 (성공)~<br>
+1.19 ~체크인 미팅~<br>
 1.23 La Piscine 온라인 신청<br>
 2.6 ~ 3.3 La Piscine (떨어지면 같은 해의 La Piscine 신청못하고 다음 해 La Piscine 지원금 못받음)<br>
 3.13 ~ 23개월 본과정<br>

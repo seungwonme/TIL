@@ -34,7 +34,7 @@ int main(void)
   printf("%.2f - %d = %.2f\n",11.76,22,11.76-22); // 11.76 - 22 = -10.24
 
   printf("%d * %d = %d\n", 10,7,10*7); // 10 * 7 = 70
-  // %d는 정수형 값을 받는다. 쉼표 뒤에 정수형 값을 %d에 넣어주면 된다. 
+  // %d는 정수형 값을 받는다. 쉼표 뒤에 정수형 값을 %d에 넣어주면 된다.
 
   printf("%d / %.1f = %.0f\n", 10,2.5,10/2.5); // 10 * 7 = 70
   // 정수를 실수로 나눠서 정수 몫이 나와도 몫은 실수형이 된다
@@ -43,20 +43,20 @@ int main(void)
   /* //scanf 키보드 입력을 받아 저장
   int input;
   printf("값을 입력하세요 :");
-  scanf("%d", &input); 
-  printf("입력값 : %d\n",input); // 입력값 : (입력값) 
+  scanf("%d", &input);
+  printf("입력값 : %d\n",input); // 입력값 : (입력값)
   // %d(정수값)을 사용했기 때문에 3.6을 입력해도 정수값인 3만 input의 값으로 들어간다.
-  
+
   int one,two,three ;
   printf("3개의 정수를 입력하세요 :"); // 1 2 3
   scanf("%d %d %d",&one,&two,&three);
-  printf("첫번째 값: %d\n",one); // 첫번째 값: 1 
-  printf("두번째 값: %d\n",two); // 두번째 값: 2 
-  printf("세번째 값: %d\n",three); // 세번째 값: 3 
+  printf("첫번째 값: %d\n",one); // 첫번째 값: 1
+  printf("두번째 값: %d\n",two); // 두번째 값: 2
+  printf("세번째 값: %d\n",three); // 세번째 값: 3
   */
 
   /* //문자(한 글자), 문자열(두 글자 이상의 여러글자)
-  char a = 'A'; // 문자는 홑따옴표로 
+  char a = 'A'; // 문자는 홑따옴표로
   printf("%c\n",a); // A
   // %c 문자 입력
 
@@ -67,21 +67,21 @@ int main(void)
 
   // 조서 작성
 
-  char name[256],crime[256];
+  char name[256], crime[256];
   int age;
-  double height,weight;
+  double height, weight;
 
   printf("이름\n");
-  scanf("%s",name); // ,sizeof(name) vscode에서 오류남
+  scanf("%s", name); // ,sizeof(name) vscode에서 오류남
   printf("나이\n");
-  scanf("%d",&age);
+  scanf("%d", &age);
   printf("키\n");
-  scanf("%lf",&height);
+  scanf("%lf", &height);
   printf("몸무게\n");
-  scanf("%lf",&weight);
+  scanf("%lf", &weight);
   printf("범죄명\n"); // ,sizeof(crime) vscode에서 오류남
-  scanf("%s",crime);
-  printf("\n\n --범죄자정보--\n\n이름     : %s\n나이     : %d\n키       : %.1lf\n몸무게   : %.1lf\n범죄이력 : %s\n",name,age,height,weight,crime);
+  scanf("%s", crime);
+  printf("\n\n --범죄자정보--\n\n이름     : %s\n나이     : %d\n키       : %.1lf\n몸무게   : %.1lf\n범죄이력 : %s\n", name, age, height, weight, crime);
 
   return 0;
 }

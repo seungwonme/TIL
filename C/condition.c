@@ -1,3 +1,5 @@
+#include <time.h>   // rand를 사용하기 위해서
+#include <stdlib.h> // rand를 사용하기 위해서
 #include <stdio.h>
 
 int main(void)
@@ -62,8 +64,55 @@ int main(void)
     }
   } */
 
-  /* // && ||
-  */
+  // && || js와 동일하고 예제도 간단하므로 패스
+
+  /* // 가위 2 바위 0 보 1
+  srand(time(NULL));
+  int randRsp = rand() % 3;
+  int user;
+  scanf("%d", &user);
+  if (randRsp == user)
+    printf("컴퓨터는 %d을 냈고 당신은 %d을 내서 비겼습니다.", randRsp, user);
+  else
+  {
+    if (user == 2 && randRsp == 1 || user == 0 && randRsp == 2 || user == 1 && randRsp == 0)
+      printf("컴퓨터는 %d을 냈고 당신은 %d을 내서 당신이 이겼습니다.", randRsp, user);
+    else
+      printf("컴퓨터는 %d을 냈고 당신은 %d을 내서 당신이 졌습니다.", randRsp, user);
+  } */
+
+  /* // switch
+  srand(time(NULL));
+  int i = rand() % 3;
+  switch (i)
+  {
+  case 0: printf("가위\n"); break; // js와 똑같이 case에 해당되면 밑의 줄도 모두 반환한다.
+  // 밑의 줄이 반환되는 것이 싫다면 각 조건마다 break을 붙여줘야한다. 이 때, break 문 앞의 줄에 ; 붙여줘야한다.
+  case 1: printf("바위\n"); break;
+  case 2: printf("보\n"); break;
+  default: printf("몰라요.\n");
+  }
+  return 0; */
+
+  // 업다운
+  srand(time(NULL));
+  int limit, answer;
+  printf("1부터 몇까지?\n");
+  scanf("%d",&limit);
+  int num = rand() % limit + 1;
+  printf("맞춰보세요. (1~%d)\n",limit);
+  scanf("%d",&answer);
+
+  int cnt = 1;
+  while (answer != num)
+  {
+    if(answer > num) printf("%d보다 작습니다. ",answer);
+    else if(answer < num) printf("%d보다 큽니다. ",answer);
+    printf("맞춰보세요. (1~%d)\n",limit);
+    scanf("%d",&answer);
+    cnt ++;
+  }
+  printf("%d번만에 맞췄습니다.\n",cnt);
 
   return 0;
 }
