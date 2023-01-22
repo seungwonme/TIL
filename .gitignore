@@ -1,4 +1,5 @@
 .DS_Store
 .vscode/
 .private/
-C/baekjoon.c
+c/baekjoon.c
+c/나도코딩/a.out

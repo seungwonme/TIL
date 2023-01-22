@@ -1,1 +1,0 @@
-[드림코딩 명령어 정리](https://www.youtube.com/watch?v=EL6AQl-e3AQ&list=PLtMKWib7le2Z-M2r_R9zkVR_MQbx31rfC&index=1&t=1233s)
