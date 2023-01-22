@@ -21,8 +21,8 @@
     [gg] : 현재 파일 맨 앞
     [G] : 현재 파일 맨 뒤
 
-    [ctrl u]: 위로 스크롤링
-    [ctrl d]: 아래로 스크롤링
+    [ctrl u] up: 위로 스크롤링
+    [ctrl d] down: 아래로 스크롤링
     [{]: 문단 시작
     [}]: 문단 끝
     [*]: 커서의 단어와 같은 단어로 이동
@@ -38,12 +38,7 @@
     [v] visual: 비주얼 모드
     [y]: copy
     [d]: cut
-    [p]: paste
-
-
-    
-   
-     
-
+    [p]: paste 
+  
 [드림코딩 vim](https://www.youtube.com/watch?v=cY0JxzENBJg&list=PLtMKWib7le2Z-M2r_R9zkVR_MQbx31rfC&index=2&t=1s) ~ 11:48<br>
 [vim 단축키 정리](https://blog.outsider.ne.kr/540)
