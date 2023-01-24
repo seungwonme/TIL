@@ -4,5 +4,6 @@ int main(void)
 {
   printf("hello world\n"); // hello world
   // 무조건 쌍따옴표 "", ; 뒤에 꼭 붙여줘야함
+  if (-1 == remove("hello"))
   return 0;
 }

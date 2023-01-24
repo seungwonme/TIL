@@ -66,7 +66,7 @@ int main(void)
   // 피라미드 쌓기
 
   int floor;
-  printf("몇 층까지?");
+  printf("몇 층까지?\n");
   scanf("%d", &floor);
   for (int i = 1; i <= floor; i++)
   {

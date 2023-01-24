@@ -41,7 +41,7 @@ int main(void)
   scanf("%d",&user);
   if(user != d) 
   {
-    printf("%d 틀렸다.\n",d);
+    printf("틀렸다.\n");
     return 0;
   }
   printf("예에~ 성공이다 !!\n");
@@ -51,21 +51,21 @@ int main(void)
 
 int add(int x, int y)
 {
-  printf("%d + %d = ?\n",x,y);
+  printf("%d + %d = ",x,y);
   return x+y;
 }
 int min(int x, int y)
 {
-  printf("%d - %d = ?\n",x,y);
+  printf("%d - %d = ",x,y);
   return x-y;
 }
 int multi(int x, int y)
 {
-  printf("%d * %d = ?\n",x,y);
+  printf("%d * %d = ",x,y);
   return x*y;
 }
 int divi(int x, int y)
 {
-  printf("%d / %d = ? (몫)\n",x,y);
+  printf("%d / %d = ",x,y);
   return x/y;
 }
