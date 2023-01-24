@@ -13,5 +13,6 @@ int main(void)
   srand(time(NULL)); // 난수 초기화
   printf("\n난수 초기화 이후\n");
   for (int i = 0; i < 10; i++) printf("%d",rand() % 10); // 매번 다름
+  if(-1==remove("random"))
   return 0;
 }

@@ -113,6 +113,6 @@ int main(void)
     cnt ++;
   }
   printf("%d번만에 맞췄습니다.\n",cnt);
-
+  if(-1==remove("condition"))
   return 0;
 }

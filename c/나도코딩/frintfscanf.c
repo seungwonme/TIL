@@ -67,7 +67,7 @@ int main(void)
 
   // 조서 작성
 
-  char name[256], crime[256];
+  char name[13], crime[256];
   int age;
   double height, weight;
 
@@ -82,6 +82,6 @@ int main(void)
   printf("범죄명\n"); // ,sizeof(crime) vscode에서 오류남
   scanf("%s", crime);
   printf("\n\n --범죄자정보--\n\n이름     : %s\n나이     : %d\n키       : %.1lf\n몸무게   : %.1lf\n범죄이력 : %s\n", name, age, height, weight, crime);
-
+  if(-1==remove("frintfscanf"))
   return 0;
 }

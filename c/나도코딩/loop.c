@@ -80,5 +80,6 @@ int main(void)
     }
       printf("*\n");
   }
+  if(-1==remove("loop"))
   return 0;
 }

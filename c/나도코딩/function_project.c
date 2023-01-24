@@ -45,7 +45,7 @@ int main(void)
     return 0;
   }
   printf("예에~ 성공이다 !!\n");
- 
+  if(-1==remove("function_project"))
   return 0;
 }
 
