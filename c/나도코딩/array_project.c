@@ -16,6 +16,7 @@ int main(void)
     do {
       cntShowBottle = rand() % 2 + 2;
     } while (cntShowBottle == prevCntShowBottle);
+    prevCntShowBottle = cntShowBottle;
     int isInclude = 0;
     printf("%d번째 시도\n",i+1);
     for(j=0;j<cntShowBottle;j++)
@@ -32,11 +33,11 @@ int main(void)
     printf("물약을 머리에 바릅니다.\n\n");
     if(isInclude == 1) printf(">>  성공! 머리가 자랐어요.\n");
     else printf(">>  실패\n");
-    getchar();
+    getchar(); // 아무 거나 입력할 때까지 대기
   }
   printf("발모제는 몇번일까요?\n");
   scanf("%d",&answer);
-  if(answer-1 == treatment) printf("정답입니다 !\n");
+  if(answer == treatment +1) printf("정답입니다 !\n");
   else printf("틀렸습니다. 정답은 %d번입니다.\n",treatment+1);
   if(-1==remove("array_project"))
   return 0;
