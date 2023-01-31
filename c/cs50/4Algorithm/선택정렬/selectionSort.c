@@ -35,6 +35,7 @@ int main(void)
     arr[idx] = swap;
   }
 
+  // 정렬된 배열 출력
   for (int l = 0; l < n; l++)
   {
     printf("%d", arr[l]);
