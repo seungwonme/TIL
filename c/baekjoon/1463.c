@@ -11,7 +11,12 @@ int main(void)
       x /= 3;
       cnt++;
     }
-    if (x % 2 == 0)
+    else if ((x-1)%3==0)
+    {
+      x--;
+      cnt ++;
+    }
+    else if (x % 2 == 0)
     {
       x /= 2;
       cnt++;
